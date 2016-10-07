@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "padded-blocks": 0
+  },
+  "globals": {
+    "describe": true,
+    "context": true,
+    "it": true,
+    "__dirname": true
+  }
+}

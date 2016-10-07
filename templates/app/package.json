@@ -1,0 +1,45 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node $NODE_DEBUG_OPTION index.js ",
+    "nodemon": "./node_modules/.bin/nodemon $NODE_DEBUG_OPTION index.js",
+    "test": "./node_modules/.bin/mocha tests/",
+    "lint": "./node_modules/.bin/eslint .",
+    "validate": "npm ls"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "<%= repo %>"
+  },
+  "keywords": [
+    "wayblazer"
+  ],
+  "author": "<%= author %>",
+  "license": "MIT",
+  "homepage": "<%= homepage %>",
+  "dependencies": {
+    "async": "^2.0.1",
+    "bunyan": "^1.8.1",
+    "bunyan-prettystream": "^0.1.3",
+    "config": "^1.21.0",
+    "lodash": "^4.15.0",
+    "moment": "^2.14.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "mocha": "^3.0.2",
+    "nodemon": "^1.10.2",
+    "precommit-hook": "^3.0.0",
+    "sinon": "^1.17.5"
+  }
+}

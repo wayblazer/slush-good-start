@@ -1,0 +1,44 @@
+{
+  "name": "slush-good-start",
+  "version": "0.1.0",
+  "description": "A slush generator for project with testing, eslint, config, testing, and webstorm project settings.",
+  "main": "slushfile.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "validate": "npm ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wayblazer/slush-good-start"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "slushgenerator",
+    "webstorm",
+    "eslint",
+    "config",
+    "logging",
+    "testing"
+  ],
+  "author": "Christopher Holmok <chris@wayblazer.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/wayblazer/slush-good-start",
+  "bugs": {
+    "url": "https://github.com/wayblazer/slush-good-start/issues"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-conflict": "^0.4.0",
+    "gulp-install": "^0.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^4.0.0",
+    "inquirer": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint-plugin-import": "^2.0.0",
+  }
+}
