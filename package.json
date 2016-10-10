@@ -1,6 +1,6 @@
 {
   "name": "slush-good-start",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A slush generator for project with testing, eslint, config, testing, and webstorm project settings.",
   "main": "slushfile.js",
   "scripts": {
